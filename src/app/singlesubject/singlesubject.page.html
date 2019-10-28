@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+     <ion-buttons slot="start">
+
+      <ion-back-button defaultHref="list-of-subjects"></ion-back-button>
+
+
+
+    </ion-buttons>
+    <ion-button slot="end" (click)="deleteSubject()">
+       
+        <ion-icon name="close"></ion-icon>
+  
+      </ion-button>
+    <ion-title>subject</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://upscpathshala.com/content/wp-content/uploads/2018/09/optionall.jpg" height="250px" />
+
+  <ion-card-header>
+
+    <ion-card-title>The Subject <b>{{singleSubject?.name}}</b>  is a 3 credit hour subject with </ion-card-title>
+
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <b>subject id : </b> {{singleSubject?.id}}
+
+
+
+
+
+  </ion-card-content>
+  
+</ion-content>

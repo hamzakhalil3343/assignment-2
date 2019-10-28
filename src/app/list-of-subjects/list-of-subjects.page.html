@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>List of Subjects</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of subjects">
+
+    <ion-item [routerLink]="['singlesubject',item.id]">
+
+      <ion-card-content>
+
+        <ion-label> <b>Subject Name : </b> {{ item?.name }}       <br>--------------------<br>  <b>Subject ID:  </b> {{ item?.id }}
+
+        </ion-label>
+
+      </ion-card-content>
+
+    </ion-item>
+
+  </ion-card>
+</ion-content>

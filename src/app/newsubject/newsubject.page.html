@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>newsubject</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="formcon">
+    <ion-item>
+      <ion-input  formControlName="name" type="text" placeholder="name"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input  formControlName="id" type="text" placeholder="id"></ion-input>
+      </ion-item>
+      
+          <ion-button (click)="addsubject()" shape="round">ADD</ion-button>
+        
+  </form>
+
+</ion-content>
